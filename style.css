@@ -1,0 +1,84 @@
+/* ===== تنظیمات کلی ===== */
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #ffe4ec;
+}
+
+/* ===== هدر (مثل products) ===== */
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe4ec;
+}
+
+/* ===== فوتر ===== */
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===== بخش محصولات (وسط صفحه) ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center; /* وسط چین */
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ===== کارت محصول ===== */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== عکس محصول ===== */
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ===== هاور افکت 🔥 ===== */
+.product:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== عنوان ===== */
+.product h3 {
+    margin-top: 10px;
+    color: #ff1493;
+}
+
+/* ===== ریسپانسیو ===== */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
